@@ -1,0 +1,29 @@
+services:
+  kuzo-app:
+    container_name: kuzo-app
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # 1. Nginx Proxy Settings
+      - VIRTUAL_HOST=${DOMAIN_NAME}
+      - VIRTUAL_PORT=3000
+      
+      # 2. SSL Configuration
+      - LETSENCRYPT_HOST=${DOMAIN_NAME}
+      - LETSENCRYPT_EMAIL=${SSL_EMAIL}
+      
+      # 3. App Secrets
+      - PRIVATE_BACKEND_API_URL=${PRIVATE_BACKEND_API_URL}
+      - PRIVATE_BACKEND_API_KEY=${PRIVATE_BACKEND_API_KEY}
+      - NODE_ENV=production
+      - ORIGIN=${APP_ORIGIN}
+
+    # Connect to the proxy network we created earlier
+    networks:
+      - krru-proxy
+
+networks:
+  krru-proxy:
+    external: true

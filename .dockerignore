@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Version Control
+.git
+.gitignore
+
+# Build output
+build
+.svelte-kit
+dist
+
+# Environment variables (SECURITY RISK if copied!)
+.env
+.env.*
+!.env.example
+
+# Docker files (Don't copy the instructions into the image itself)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs and debug
+npm-debug.log*
+logs
+*.log
+
+# IDE settings
+.vscode

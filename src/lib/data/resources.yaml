@@ -1,0 +1,40 @@
+# src/lib/data/resources.yaml
+- name: "Airflow DAGs"
+  href: "#"
+  desc: "ETL scheduling & orchestration"
+  section: "Tools"
+
+- name: "Data Catalog"
+  href: "#"
+  desc: "Schema, lineage & metadata"
+  section: "Books"
+
+- name: "Feature Store"
+  href: "#"
+  desc: "Feature serving for models"
+  section: "Papers"
+
+- name: "Model Registry"
+  href: "#"
+  desc: "Versioning & deployment"
+  section: "Tools"
+
+- name: "Monitoring"
+  href: "#"
+  desc: "Alerts, SLAs and drift detection"
+  section: "Videos"
+
+- name: "Notebook Gallery"
+  href: "#"
+  desc: "Reusable analysis templates"
+  section: "Papers"
+
+- name: "Templates"
+  href: "#"
+  desc: "Boilerplate repos & scripts"
+  section: "Papers"
+
+- name: "Gradio"
+  href: "https://www.gradio.app"
+  desc: "Gradio is the fastest way to demo your machine learning model with a friendly web interface so that anyone can use it, anywhere!"
+  section: "Tools"
