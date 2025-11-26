@@ -88,3 +88,18 @@
   href: "https://www.youtube.com/@Optimization4All"
   desc: "Operations Research and Optimization Community"
   section: "Podcasts & YouTube"
+
+- name: "Attention is all you need"
+  href: "https://arxiv.org/abs/1706.03762"
+  desc: "Transformers paper by Vaswani et al."
+  section: "Papers"
+
+- name: "LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics"
+  href: "https://arxiv.org/abs/2511.08544"
+  desc: "Paper by LeCun et al. on new self-supervised learning method"
+  section: "Papers"
+
+- name: "Nested Learning: The Illusion of Deep Learning Architectures"
+  href: "https://abehrouz.github.io/files/NL.pdf"
+  desc: "Paper by Behrouz et al. on Nested Learning"
+  section: "Papers"
